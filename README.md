@@ -7,7 +7,10 @@ Resources to start with:-
    Also has baselines for hate intensity prediction, might be useful place to begin with.
    Sent request to authors for the dataset procured.
 
-3) https://ieeexplore.ieee.org/document/9679052
+1.1) Hate Norm Gold Dataset found. Request for link on my google drive (Private dataset so not making it public)
+https://drive.google.com/drive/folders/1NkoS6c2XhTwWwHccp79t5T1Hs0FddNNF?usp=sharing
+
+2) https://ieeexplore.ieee.org/document/9679052
    Hate intensity prediction for twitter chain replies.
 
 
