@@ -14,3 +14,8 @@ https://drive.google.com/drive/folders/1NkoS6c2XhTwWwHccp79t5T1Hs0FddNNF?usp=sha
    Hate intensity prediction for twitter chain replies.
 
 
+Baseline trained for 10 epochs: 
+   pear (0.7303703697290242, 2.2432234301657855e-202)
+   cosine 0.9711329769065743
+Link for weights: https://iiitaphyd-my.sharepoint.com/:f:/g/personal/vinay_s_research_iiit_ac_in/EgeojRjf-M5LoQeiICe_8dABAOPuT-TACdz4DYTPeOPkjQ?e=8V9lty
+

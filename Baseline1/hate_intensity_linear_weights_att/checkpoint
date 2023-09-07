@@ -1,0 +1,2 @@
+model_checkpoint_path: "hate_int_linear_trans42_ATT"
+all_model_checkpoint_paths: "hate_int_linear_trans42_ATT"
