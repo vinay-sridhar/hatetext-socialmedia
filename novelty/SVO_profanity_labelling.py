@@ -2,8 +2,13 @@ import pandas as pd
 import spacy 
 from better_profanity import profanity
 
-df = pd.read_csv('/home/karet/Documents/IRE/Project/hatetext-socialmedia/Baseline1/data/hate_norm_with_span.csv')
-df = df.drop(columns=['Normalized_Sentence', 'Normalized_Intensity','Span','spanbio','postags'])
+old_df = pd.read_csv('/home/karet/Documents/IRE/Project/hatetext-socialmedia/Baseline1/data/hate_norm_with_span.csv')
+stacked_sent = pd.concat([old_df['Sentence'], old_df['Normalized_Sentence']])
+stacked_sent.reset_index(drop=True, inplace=True)
+stacked_inten = pd.concat([old_df['Original_Intensity'], old_df['Normalized_Intensity']])
+stacked_inten.reset_index(drop=True, inplace=True)
+df = pd.DataFrame({'Sentence': stacked_sent, 'Intensity': stacked_inten})
+
 
 # Classifiy each sentence to have profanity or not, GitHub: https://github.com/snguyenthanh/better_profanity compares using a list of profane words
 # Adding a column to the dataframe called Profanity
@@ -16,7 +21,9 @@ df['Profanity'] = df['Profanity'].astype(int)
 # Subject:[1, 0, 0]
 # Verb:   [0, 1, 0]
 # Object: [0, 0, 1]
-nlp = spacy.load("en_core_web_sm")
+
+# Using the Roberta base model tokenizer https://spacy.io/models/en#en_core_web_trf
+nlp = spacy.load("en_core_web_trf")
 
 def subject_tag(sentence):
     doc = nlp(sentence)
