@@ -40,6 +40,9 @@ pip install -r requirements.txt
 
 **hate_intensity_exp_enc.ipynb**
 > Contains the addition of the exponential encoding fusion layer upon the baseline BERT model 
+
+** Model Artifacts
+The finetuned model files are available here https://drive.google.com/file/d/1BaKnNur3OZ27XQFuxAQeIUbGoiXPTc5s/view?usp=sharing
 ---
 Resources to start with:-
 1) https://paperswithcode.com/paper/proactively-reducing-the-hate-intensity-of#code
