@@ -12,6 +12,7 @@ pip install -r requirements.txt
 ### Baseline
 **hate_intensity_prediction.ipynb**
 > Contains the baseline implementation with *BERT + BiLSTM* architecture
+---
 
 ### Advancements
 **hate_intensity_prediction_roberta.ipynb**
@@ -20,7 +21,7 @@ pip install -r requirements.txt
 **hate_intensity_xlnet.ipynb**
 > Contains experiments with finetuning of XLnet
 **hate_intensity_ensemble.ipynb**: Contains the ensemble model of the models we experimented with 
-
+---
 ### Novelty
 1. SVO relative positional encoding + custom Transformer
 
@@ -39,7 +40,7 @@ pip install -r requirements.txt
 
 **hate_intensity_exp_enc.ipynb**
 > Contains the addition of the exponential encoding fusion layer upon the baseline BERT model 
-
+---
 Resources to start with:-
 1) https://paperswithcode.com/paper/proactively-reducing-the-hate-intensity-of#code
    Has a dataset and code for finding hate phrases and normalizes it into non hate phrase based sentences.
