@@ -1,0 +1,14 @@
+numpy
+tensorflow
+tqdm
+pandas
+transformers
+scikit-learn
+scipy
+matplotlib
+seaborn
+sentencepiece
+sacremoses
+torch
+torchvision
+torchaudio
